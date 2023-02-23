@@ -1,7 +1,7 @@
 let currentPhoto = 0;
 
 var data ={
-    photo:'https://github.com/usernameisnotnavailable/usernameisnotnavailable.github.io/blob/main/images/image1.jpeg',
+    photo:'images/image1.jpeg',
     title: 'The Heart and Soul Nebulas',
     description: 'Is the heart and soul of our Galaxy located in Cassiopeia? Possibly not, but that is where two bright emission nebulas nicknamed Heart and Soul can be found.',
 };
