@@ -1,5 +1,5 @@
 function Note(){
-    return <h1>Succesfull</h1>
+    return <h1>Successful</h1>
 }
 
 export default Note;
