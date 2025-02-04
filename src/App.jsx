@@ -1,12 +1,11 @@
 import './App.css'
-import Note from "./components/Note.jsx";
+
 
 function App() {
 
-
   return (
     <>
-        <Note />
+
     </>
   )
 }
