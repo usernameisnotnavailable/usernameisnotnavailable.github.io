@@ -1,7 +1,3 @@
-#front-holder {
-
-}
-
 #numbers-video {
     position: absolute;
     top: 0;
@@ -11,9 +7,12 @@
     object-fit: cover;
     z-index: -1
 }
+body {
+    margin: 0;
+}
 #highlighted-name {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 90px;
@@ -24,9 +23,64 @@
             0px 0px 30px rgba(1, 13, 53, 0.99),
             0px 0px 40px rgba(1, 13, 53, 0.99),
             0px 0px 50px rgba(1, 13, 53, 0.99),
-            0px 0px 60px rgba(15, 15, 18, 0.99)
+            0px 0px 60px rgba(15, 15, 18, 0.99);
+
 }
 
 #blink{
     color: yellow;
 }
+#root{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+ }
+
+#middle-section {
+    padding: 50px;
+    display: grid;
+    column-gap: 50px;
+    row-gap: 100px;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+
+    position: relative;
+    background: linear-gradient(200deg,
+    rgba(2,25,66,1) 6%,
+    rgba(0,2,3,0.99) 30%,
+    rgba(0,2,3,0.99) 70%,
+    rgba(2,25,66,1) 96%);
+}
+
+.card{
+    padding: 20px;
+    color: white;
+    position: relative;
+    background: rgb(2, 12, 59);
+    width: fit-content;
+    margin: 10px;
+    align-content: center;
+    max-width: 200px;
+    border-radius: 40px;
+
+    box-shadow:
+            inset 2px 2px 7px 6px black,
+            inset 5px 5px 11px 8px rgb(22, 126, 255),
+        -3px -4px 14px 6px black,
+        0px 0px 18px 18px #166eff,
+        0px 0px 20px 20px #0000ff;
+
+}
+
+.card-project-name{
+    text-align: center;
+    text-wrap: wrap;
+}
+.card-project-body{
+    text-align: center;
+    font-size: x-large;
+}
+
+
+

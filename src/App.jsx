@@ -1,12 +1,15 @@
 import './App.css'
-import Background from "./components/Background.jsx";
+import FrontDisplay from "./components/FrontDisplay.jsx";
+import Card from "./components/Card.jsx";
+import MiddleSection from "./components/MiddleSection.jsx";
 
 
 function App() {
 
   return (
     <>
-      <Background />
+      <FrontDisplay />
+        <MiddleSection />
     </>
   )
 }
