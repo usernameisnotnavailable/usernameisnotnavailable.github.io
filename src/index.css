@@ -44,7 +44,6 @@ body {
     row-gap: 100px;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
-
     position: relative;
     background: linear-gradient(200deg,
     rgba(2,25,66,1) 6%,
@@ -56,18 +55,15 @@ body {
 .card{
     padding: 20px;
     color: white;
-    position: relative;
-    width: fit-content;
     margin: 10px;
-    align-content: baseline;
     max-width: 250px;
     min-height: 300px;
     border-radius: 50px;
-    background: #021157;
-
+    display: grid;
+    align-content: space-evenly;
+    align-items: center;
     background: radial-gradient(circle,
-    rgba(0,2,3,0.99) 1%,
-    rgba(1, 20, 48, 0.99) 50%,
+    rgba(2, 33, 78, 0.99) 20%,
     rgb(0, 23, 62) 80%);
 
     box-shadow:
@@ -105,13 +101,19 @@ body {
 .card-project-name{
     text-align: center;
 
-
 }
 .card-project-body{
+    padding: 15px;
     text-align: center;
     font-size: x-large;
     text-wrap: wrap;
 }
 
-
+@media (max-width: 800px) {
+    #middle-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
 
