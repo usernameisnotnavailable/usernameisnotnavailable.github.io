@@ -75,8 +75,28 @@ body {
             0px 0px 17px 17px #0a0b0c,
             0px 0px 20px 20px #0114d1;
 
+    animation: color infinite 2s alternate;
+
 }
 
+@keyframes color {
+    0% {
+        box-shadow: inset 2px 2px 7px 6px #021054,
+        inset 5px 5px 11px 8px rgb(0, 61, 139),
+        3px 4px 14px 8px black,
+        0px 0px 17px 17px #0a0b0c,
+        0px 0px 20px 20px #0654f3;
+
+    }
+
+    100% {
+        box-shadow: inset 2px 2px 7px 6px #021054,
+        inset 5px 5px 11px 8px rgb(0, 61, 139),
+        -3px -4px 14px 6px black,
+        0px 0px 18px 18px #166eff,
+        0px 0px 20px 20px #0000ff;
+    }
+}
 .card-project-name{
     text-align: center;
 
