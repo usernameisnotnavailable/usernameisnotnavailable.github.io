@@ -1,12 +1,13 @@
 import Card from "./Card.jsx";
 
-function MiddleSection() {
+function CardSection() {
     return <div id="middle-section">
         <Card />
         <Card />
         <Card />
         <Card />
+
     </div>
 }
 
-export default MiddleSection;
+export default CardSection;
