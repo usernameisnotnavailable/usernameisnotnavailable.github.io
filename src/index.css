@@ -41,7 +41,6 @@ body {
 
 #middle-section {
     padding-top: 300px;
-    /*padding: 50px;*/
     display: grid;
     column-gap: 50px;
     row-gap: 200px;
@@ -55,48 +54,22 @@ body {
     rgba(2,25,66,1) 96%);
 }
 
-.card{
-    padding: 20px;
+.card-container {
     color: white;
-    margin: 10px;
-    max-width: 250px;
-    min-height: 250px;
+    min-width: 250px;
+    min-height: 300px;
+    position: relative;
+    cursor: pointer;
     border-radius: 50px;
-    display: grid;
-    align-content: space-evenly;
-    align-items: center;
-    background: radial-gradient(circle,
-    rgba(2, 33, 78, 0.99) 20%,
-    rgb(0, 23, 62) 80%);
     box-shadow:
-            inset 2px 2px 7px 6px #021054,
-            inset 5px 5px 11px 8px rgb(0, 61, 139),
-            -3px -4px 14px 8px black,
-            0px 0px 17px 17px #0a0b0c,
+            3px -4px 14px 8px black,
+            0px 0px 17px 17px #1f5b98,
             0px 0px 20px 20px #0114d1;
 
-    animation: color infinite 2s alternate;
 
 }
 
-@keyframes color {
-    0% {
-        box-shadow: inset 2px 2px 7px 6px #021054,
-        inset 5px 5px 11px 8px rgb(0, 61, 139),
-        3px 4px 14px 8px black,
-        0px 0px 17px 17px #0a0b0c,
-        0px 0px 20px 20px #0654f3;
 
-    }
-
-    100% {
-        box-shadow: inset 2px 2px 7px 6px #021054,
-        inset 5px 5px 11px 8px rgb(0, 61, 139),
-        -3px -4px 14px 6px black,
-        0px 0px 18px 18px #166eff,
-        0px 0px 20px 20px #0000ff;
-    }
-}
 .card-project-name{
     text-align: center;
 
@@ -104,16 +77,75 @@ body {
 .card-project-body{
     padding: 15px;
     text-align: center;
-    font-size: x-large;
+    font-size: 20px;
     text-wrap: wrap;
 }
 
+
+.card-front,
+.card-back {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+
+
+.card {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: radial-gradient(circle,
+    rgba(2, 33, 78, 0.99) 20%,
+    rgb(0, 23, 62) 80%);
+    box-shadow:
+            inset 2px 2px 7px 6px #021054,
+            inset 5px 5px 11px 8px rgb(0, 61, 139);
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+
+
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+    animation: color 1 0.5s forwards;;
+}
+
+
+
+.card-back {
+    transform: rotateY(180deg);
+
+
+}
+
+@keyframes color {
+
+    100% {
+        box-shadow: inset 2px 2px 7px 6px #0000ff,
+        inset 5px 5px 11px 8px #166eff,
+        -3px -4px 14px 6px black,
+        0px 0px 18px 18px #0000ff,
+        0px 0px 20px 20px #2e7dfb;
+    }
+}
+
+
+
 @media (max-width: 800px) {
     #middle-section {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        grid-template-columns: auto;
     }
+
     #highlighted-name {
         min-width: 350px;
     }

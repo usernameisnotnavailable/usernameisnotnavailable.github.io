@@ -1,7 +1,20 @@
-function Card() {
-    return <div className="card">
-        <h2 className="card-project-name">Projekt neve</h2>
-        <h3 className="card-project-body">Rövid ismertető, arról hogy mivel foglalkozik a projekt.</h3>
+
+
+function Card( {title, description, languages, tech} ) {
+
+
+
+    return <div className="card-container">
+        <div className="card">
+            <div className="card-front">
+                <h2 className="card-project-name">{title}</h2>
+                <h3 className="card-project-body">{description}</h3>
+            </div>
+            <div className="card-back">
+                <h3 className="card-project-body">Languages: {languages}</h3>
+                <h3 className="card-project-body">Tech stack: {tech}</h3>
+            </div>
+        </div>
     </div>
 }
 
