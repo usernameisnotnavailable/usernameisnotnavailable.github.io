@@ -40,7 +40,8 @@ body {
  }
 
 #middle-section {
-    padding-top: 300px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
     display: grid;
     column-gap: 50px;
     row-gap: 200px;

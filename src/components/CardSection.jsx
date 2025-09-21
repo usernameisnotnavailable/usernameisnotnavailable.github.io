@@ -1,6 +1,10 @@
 import Card from "./Card.jsx";
+import { useNavigate } from "react-router-dom";
+
 
 function CardSection() {
+
+    const navigate = useNavigate();
 
     const rentalTitle = "Rental Service";
     const rentalDescription = "Website to host a rental service. " +
@@ -10,14 +14,14 @@ function CardSection() {
     const dummyTitle = "Some title";
     const dummyDesc = "Some dummy desc for the project as a placeholder";
     const dummyTech = ["list", "of", "tech", "used", "in", "project"];
-    const empty = [];
 
+    function handleClick(page) {
+        navigate("/" + page);
+    }
 
     return <div id="middle-section">
-        <Card title={rentalTitle} description={rentalDescription} tech={rentalTech} languages={rentalLanguages}/>
+        <Card onClick={handleClick("rental")} title={rentalTitle} description={rentalDescription} tech={rentalTech} languages={rentalLanguages}/>
         <Card title={dummyTitle} description={dummyDesc} tech={dummyTech}/>
-        <Card title={dummyTitle} description={dummyDesc} tech={dummyTech}/>
-        <Card title={dummyTitle} description={dummyDesc} tech={empty}/>
     </div>
 }
 
