@@ -15,12 +15,9 @@ function CardSection() {
     const dummyDesc = "Some dummy desc for the project as a placeholder";
     const dummyTech = ["list", "of", "tech", "used", "in", "project"];
 
-    function handleClick(page) {
-        navigate("/" + page);
-    }
 
     return <div id="middle-section">
-        <Card onClick={handleClick("rental")} title={rentalTitle} description={rentalDescription} tech={rentalTech} languages={rentalLanguages}/>
+        <Card title={rentalTitle} description={rentalDescription} tech={rentalTech} languages={rentalLanguages}/>
         <Card title={dummyTitle} description={dummyDesc} tech={dummyTech}/>
     </div>
 }
