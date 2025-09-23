@@ -1,5 +1,4 @@
 #numbers-video {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -9,6 +8,8 @@
 }
 body {
     margin: 0;
+    background-color: var(--default-background);
+    letter-spacing: 2px;
 }
 #highlighted-name {
     min-width: 660px;
@@ -16,17 +17,25 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-    color: rgba(9, 125, 241, 0.98);
+    font-size: var(--main-font-size);
+    color: var(--main-font-color);
     text-align: center;
-    letter-spacing: 2px;
+
     text-shadow:
             0px 0px 2px rgb(4, 134, 124),
             0px 0px 30px rgba(1, 13, 53, 0.99),
             0px 0px 40px rgba(1, 13, 53, 0.99),
             0px 0px 50px rgba(1, 13, 53, 0.99),
             0px 0px 60px rgba(15, 15, 18, 0.99);
+    z-index: 1;
 
+}
+
+#front-holder {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #blink{
@@ -35,8 +44,6 @@ body {
 #root{
     width: 100%;
     margin: 0;
-    position: absolute;
-    top: 100%;
  }
 
 #middle-section {
@@ -48,11 +55,7 @@ body {
     grid-template-columns: auto auto;
     justify-content: space-evenly;
     position: relative;
-    background: linear-gradient(200deg,
-    rgba(2,25,66,1) 6%,
-    rgba(0,2,3,0.99) 30%,
-    rgba(0,2,3,0.99) 70%,
-    rgba(2,25,66,1) 96%);
+    background: var(--background-gradient)
 }
 
 .card-container {
@@ -71,7 +74,7 @@ body {
 }
 
 
-.card-project-name{
+.card-project-name {
     text-align: center;
 
 }
@@ -103,30 +106,30 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
     background: radial-gradient(circle,
     rgba(2, 33, 78, 0.99) 20%,
     rgb(0, 23, 62) 80%);
     box-shadow:
             inset 2px 2px 7px 6px #021054,
             inset 5px 5px 11px 8px rgb(0, 61, 139);
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
 }
-
 
 
 
 .card-container:hover .card {
     transform: rotateY(180deg);
-    animation: color 1 0.5s forwards;;
+}
+
+.card-container:hover a {
+    animation: color 1 0.5s forwards;
 }
 
 
 
 .card-back {
     transform: rotateY(180deg);
-
-
 }
 
 @keyframes color {
@@ -151,3 +154,4 @@ body {
         min-width: 350px;
     }
 }
+

@@ -1,8 +1,10 @@
-function Card( {title, description, languages, tech} ) {
+import {Link} from "react-router-dom";
+
+function Card( {title, description, languages, tech, to} ) {
 
 
 
-    return <div className="card-container">
+    return <Link to={to} className="card-container">
         <div className="card">
             <div className="card-front">
                 <h2 className="card-project-name">{title}</h2>
@@ -13,7 +15,7 @@ function Card( {title, description, languages, tech} ) {
                 <h3 className="card-project-body">Tech stack: {tech}</h3>
             </div>
         </div>
-    </div>
+    </Link>
 }
 
 export default Card;

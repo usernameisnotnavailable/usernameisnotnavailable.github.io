@@ -1,0 +1,13 @@
+:root {
+    --background-gradient: linear-gradient(200deg,
+    rgba(2,25,66,1) 6%,
+    rgba(0,2,3,0.99) 30%,
+    rgba(0,2,3,0.99) 70%,
+    rgba(2,25,66,1) 96%);
+
+    --main-font-color: rgba(9, 125, 241, 0.98);
+    --main-font-size: clamp(32px, 10vw, 100px);
+    --section-title-font-size: clamp(12px, 10vw, 30px);
+
+    --default-background: black;
+}
