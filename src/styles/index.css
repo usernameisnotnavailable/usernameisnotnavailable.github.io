@@ -10,6 +10,10 @@ body {
     margin: 0;
     background-color: var(--default-background);
     letter-spacing: 2px;
+    color: white;
+}
+a {
+    color: white;
 }
 
 section {
