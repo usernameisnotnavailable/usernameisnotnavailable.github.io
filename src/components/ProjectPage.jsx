@@ -1,42 +1,41 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import "../styles/main.css";
 
 export default function ProjectPage({
                                         title,
                                         description,
                                         tech,
-                                        languages,
                                         repoLink,
                                         demoVideo,
                                         screenshots,
-                                        status,
-                                        learnings,
+                                        status
                                     }) {
     return (
         <div className="project-page">
             <h1 className="title">{title}</h1>
-
             <div className="project-description">
+
+                <p className="section-title">Aim</p>
                 <p>{description}</p>
-                <p><strong>Status:</strong> {status}</p>
+
+                <p className="section-title"><strong>Status</strong></p>
+                <p> {status}</p>
             </div>
 
             <div className="project-meta">
-                <p className="section-title"><strong>Languages:</strong> </p>
-                {languages}
-                <p className="section-title"><strong>Tech stack:</strong></p>
+                <p className="section-title"><strong>Tech stack</strong></p>
                 <ul>
                     {tech && tech.length > 0 && (
-                            tech.map((item, key) => (
-                        <li key={key}>{item}</li>
-                    ))
-                        )}
+                        tech.map((item, key) => (
+                            <li key={key}>{item}</li>
+                        ))
+                    )}
                 </ul>
             </div>
 
             {demoVideo && (
                 <div className="project-demo">
-                    <video src={demoVideo} controls />
+                    <video src={demoVideo} controls/>
                 </div>
             )}
 
@@ -55,14 +54,6 @@ export default function ProjectPage({
                 </div>
             )}
 
-            <div className="project-learnings">
-                <h2>What I learned</h2>
-                <ul>
-                    {learnings.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                    ))}
-                </ul>
-            </div>
 
             <div className="project-links">
                 {repoLink && (

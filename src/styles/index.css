@@ -11,6 +11,10 @@ body {
     background-color: var(--default-background);
     letter-spacing: 2px;
 }
+
+section {
+    display: flex;
+}
 #highlighted-name {
     min-width: 660px;
     position: absolute;
