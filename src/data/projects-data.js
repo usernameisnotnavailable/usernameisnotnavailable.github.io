@@ -14,9 +14,9 @@ export const projects = [
         repoLink: null,
         demoVideo: "/rental-video.mp4",
         screenshots: ["/booking.png", "/index.png"],
-        status: "Data persistence and item management system complete. " +
-            "Endpoints are secured by Spring security. Internal booking management completed. " +
-            "Ongoing development: Polishing dashboard with charts and metrics. Item search, Dynamic category display. Complete booking system. Auto email system.",
+        status: "Data persistence and item management complete. " +
+            "Endpoints are secured by Spring security. Internal booking system completed. SSE for updating booking records without page refreshing." +
+            "Ongoing development: Polishing dashboard with charts and metrics. Item search, Dynamic category display. Complete booking system. Auto email system. Refactoring and design changes.",
     },
     {
         id: "dummy",
