@@ -13,7 +13,7 @@ export const projects = [
             "Visual: Chart.js"],
         repoLink: null,
         demoVideo: "/rental-video.mp4",
-        screenshots: ["/booking_page.jpg", "/calendar_monthly.jpg", "/calendar_weekly.jpg", "/index.png"],
+        screenshots: ["/index.png", "/new_item.jpg", "/booking_page.jpg", "/calendar_monthly.jpg", "/calendar_weekly.jpg"],
         status: "Data persistence and item management are fully implemented, " +
             "new category manager page added. " +
             "The API is now protected using Spring Security. " +
