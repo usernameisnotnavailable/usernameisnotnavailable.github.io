@@ -64,9 +64,8 @@ body {
 }
 
 .project-screenshots img {
-    width: 50%;
+    width: 90vw;
     height: 50%;
-    border-radius: 30px;
     object-fit: cover;
 }
 
@@ -101,4 +100,10 @@ body {
         min-width: 200px;
         min-height: 150px;
     }
+.middle-section {
+    padding: 0 10vh 0 10vh;
+}
+.project-page {
+   padding: 1em;
+}
 }

@@ -55,8 +55,8 @@ section {
  }
 
 #middle-section {
-    padding-top: 10vw;
-    padding-bottom: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: grid;
     column-gap: 50px;
     row-gap: 200px;
