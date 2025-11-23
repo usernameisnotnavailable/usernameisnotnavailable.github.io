@@ -17,6 +17,7 @@ export const projects = [
         status: "Data persistence and item management are fully implemented, " +
             "new category manager page added. " +
             "The API is now protected using Spring Security. " +
+            "Calendar with weekly / monthly view is updated, now reflect events." +
             "The booking system is operational and supports real-time updates via Server-Sent Events. " +
             "Work is ongoing to refine the dashboard with interactive charts," +
             "designing and adding search features, " +
