@@ -13,14 +13,15 @@ export const projects = [
             "Visual: Chart.js"],
         repoLink: null,
         demoVideo: "/rental-video.mp4",
-        screenshots: ["/booking.png", "/index.png"],
+        screenshots: ["/booking_page.jpg", "/calendar_monthly.jpg", "/calendar_weekly.jpg", "/index.png"],
         status: "Data persistence and item management are fully implemented, " +
-            "and the API is now protected using Spring Security. " +
+            "new category manager page added. " +
+            "The API is now protected using Spring Security. " +
             "The booking system is operational and supports real-time updates via Server-Sent Events. " +
             "Work is ongoing to refine the dashboard with interactive charts," +
-            " add search and dynamic category features, " +
+            "designing and adding search features, " +
             "complete the booking workflow, " +
-            "integrate automated email notifications, " +
+            "backbone of automated e-mail system is created, additional mail types to be added, " +
             "and improve overall design and code quality."
     },
     {
