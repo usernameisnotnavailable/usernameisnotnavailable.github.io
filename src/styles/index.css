@@ -8,7 +8,7 @@
 }
 body {
     margin: 0;
-    background-color: var(--default-background);
+    background: var(--background-gradient);
     letter-spacing: 2px;
     color: white;
 }
@@ -55,15 +55,14 @@ section {
  }
 
 #middle-section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     display: grid;
     column-gap: 50px;
     row-gap: 200px;
     grid-template-columns: auto auto;
     justify-content: space-evenly;
     position: relative;
-    background: var(--background-gradient)
 }
 
 .card-container {
@@ -92,7 +91,12 @@ section {
     font-size: 20px;
     text-wrap: wrap;
 }
-
+.about-title {
+    border-top: 1px solid white;
+}
+.about-me-section {
+    padding: 2vh 20vw;
+}
 
 .card-front,
 .card-back {
@@ -154,6 +158,9 @@ section {
 
 
 @media (max-width: 800px) {
+    .about-me-section {
+        padding: 2vh 10vw;
+    }
     #middle-section {
         grid-template-columns: auto;
     }

@@ -14,7 +14,7 @@ function App() {
     const router = createBrowserRouter(
         createRoutesFromElements(
             <Route path='/' element={<RootLayout/>}>
-                <Route index element={<> <FrontDisplay/> <CardSection/> </>}/>
+                <Route index element={<> <FrontDisplay/> <CardSection/> <AboutMe /> </>}/>
                 <Route path="project/:projectId" element={<ProjectWrapper />}/>
                 <Route path='*' element={<NotFound />}/>
             </Route>
@@ -33,6 +33,7 @@ export default App
 import { useParams } from "react-router-dom";
 import {projects} from "./data/projects-data.js";
 import NotFound from "./components/NotFound.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 
 function ProjectWrapper() {
     const { projectId } = useParams();
